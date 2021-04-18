@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en-US">
+<link rel="stylesheet" href="resources/styles.css">
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic'
+      rel='stylesheet' type='text/css'>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>N-ROD: a Neuromorphic Dataset for Synthetic-to-Real Domain Adaptation</title>
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="canonical" href="https://N-ROD-dataset.github.io/home/"/>
+    <meta name="referrer" content="no-referrer-when-downgrade"/>
+
+    <meta property="og:site_name" content="Neuromorphic ROD"/>
+    <meta property="og:type" content="video.other"/>
+    <meta property="og:title" content="N-ROD: a Neuromorphic Dataset for Synthetic-to-Real Domain Adaptation"/>
+    <meta property="og:description"
+          content="M. Cannici, C. Plizzari, M. Planamente, M. Ciccone, A. Bottino, B. Caputo, M. Matteucci. N-ROD: a Neuromorphic Dataset for Synthetic-to-Real Domain Adaptation. CVPR-W 2021."/>
+    <meta property="og:url" content="https://N-ROD-dataset.github.io/home/"/>
+    <meta property="og:image" content="https://N-ROD-dataset.github.io/home/resources/teaser.png"/>
+    <meta property="og:image:width" content="2848"/>
+    <meta property="og:image:height" content="974"/>
+
+    <meta property="article:publisher" content="https://github.com/marcocannici"/>
+    <meta name="twitter:card" content="https://N-ROD-dataset.github.io/home/resources/teaser.png"/>
+    <meta name="twitter:title" content="N-ROD: a Neuromorphic Dataset for Synthetic-to-Real Domain Adaptation"/>
+    <meta name="twitter:description"
+          content="M. Cannici, C. Plizzari, M. Planamente, M. Ciccone, A. Bottino, B. Caputo, M. Matteucci. N-ROD: a Neuromorphic Dataset for Synthetic-to-Real Domain Adaptation. CVPR-W 2021."/>
+    <meta name="twitter:url" content="https://N-ROD-dataset.github.io/home/"/>
+    <meta name="twitter:image" content="https://N-ROD-dataset.github.io/home/resources/teaser.png"/>
+    <meta name="twitter:site" content="@marcocannici"/>
+</head>
+
+<body>
+<div max-width=100%>
+    <br><br><br>
+    <span style="font-size:44px;font-weight:bold;">N-ROD: a Neuromorphic Dataset for Synthetic-to-Real Domain Adaptation</span><br/>
+    <div class="table-like" style="justify-content:space-evenly;max-width:800px;margin:auto;">
+        <div><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=Xd9geyMAAAAJ"
+                                             target="_blank">Marco Cannici</a></span>
+            <span style="font-size:18px">Politecnico di Milano</span>
+        </div>
+        <div><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=OlK2hyIAAAAJ&hl=it"
+                                             target="_blank">Chiara Plizzari</a></span>
+            <span style="font-size:18px">Politecnico di Torino</span>
+        </div>
+        <div><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=GIJ3h4AAAAAJ&hl=en"
+                                             target="_blank">Mirco Planamente</a></span>
+            <span style="font-size:18px">Politecnico di Torino, IIT</span>
+
+        </div>
+        <div><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=hOQjblcAAAAJ"
+                                             target="_blank">Marco Ciccone</a></span>
+            <span style="font-size:18px">Politecnico di Milano</span>
+        </div>
+        
+        <div><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=YWhB9iYAAAAJ&hl=en"
+                                             target="_blank">Andrea Bottino</a></span>
+            <span style="font-size:18px">Politecnico di Torino</span>
+        </div>
+
+        <div><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=mHbdIAwAAAAJ&hl=en"
+                                             target="_blank">Barbara Caputo</a></span>
+            <span style="font-size:18px">Politecnico di Torino, IIT</span>
+        </div>
+
+        <div><span style="font-size:18px"><a href="https://scholar.google.com/citations?user=PdbEg5YAAAAJ"
+                                             target="_blank">Matteo Matteucci</a></span>
+            <span style="font-size:18px">Politecnico di Milano</span>
+        </div>
+    </div>
+    <span style="font-size:20px;">
+        <a href='https://tub-rip.github.io/eventvision2021/'>CVPR 2021 Workshop on Event-based Vision</a>
+        <br>
+        Held in conjunction with the <a href='http://cvpr2021.thecvf.com/'>IEEE Conference on Computer Vision and Pattern Recognition 2021</a>
+    </span>
+    <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;padding:5px">
+        
+        <div><span style="font-size:28px"><a href=''>[Paper]</a></span></div>
+        <div><span style="font-size:28px"><a href='https://github.com/N-ROD-dataset/home/'>[Download]</a></span>
+        </div>
+
+
+    </div>
+
+    <div style="width:800px; margin:0 auto; text-align: justify;">
+        <!--
+        <p>
+            <b>Summary:</b>...
+        </p>
+        -->
+
+        <br><br>
+        <img style="height:300px" src="resources/teaser.png"/>
+        <br><br>
+
+        <p>
+            <b>Abstract:</b> Event cameras are novel neuromorphic sensors, which asynchronously capture pixel-level
+            intensity changes in the form of "events". Event simulation from existing RGB datasets is commonly used to
+            overcome the need of large amount of annotated data, which lacks due to the novelty of the event sensors. In
+            this context, the possibility of using event simulation in synthetic scenarios, where data generation is not
+            limited to pre-existing datasets, is to date still unexplored.
+            In this work, we analyze the synth-to-real domain shift in event data, i.e., the gap arising between
+            simulated events obtained from synthetic renderings and those captured with a real camera on real images.
+            To this purpose, we extend to the event modality the popular RGB-D Object Dataset (ROD), which already comes
+            with its synthetic version (SynROD). The resulting extended dataset is the first to enable a synth-to-real
+            analysis on event data. On the proposed Neuromorphic ROD dataset (N-ROD), we show how Domain Adaptation
+            techniques can be used to reduce the synth-to-real gap, thus enabling to take full advantage of
+            automatically generated synthetic data during training. Moreover, through extensive experiments on
+            multi-modal RGB-E data, we show that events can be effectively combined with conventional visual
+            information, encouraging further research in this area.
+        </p>
+    </div>
+    <br>
+    <hr>
+
+    <h1>Neuromorphic ROD </h1>
+    <div style="width:800px; margin:0 auto; text-align: justify">
+
+        <a href="resources/NRod.png" target="_blank">
+            <img style="height:300px" src="resources/NRod.png"/></a>
+        <br/>
+
+    </div>
+    <hr>
+   
+
+    <table align=center width=700px style="max-width: 100%">
+        <h1>Paper and Bibtex</h1>
+        <tr>
+            <td width=250px align=left>
+                <a href="" target="_blank">
+                    <img class="shadow" style="height:150px" src="resources/thumbnail.png"/>
+                </a>
+
+                <!-- <span style="font-size:20pt"><a href="" target="_blank">[ArXiv]</a></span> -->
+            </td>
+            
+            <td width=20px align=center>
+            </td>
+            <td width=250px align=left>
+                <p style="text-align:left;">
+                    <b><span style="font-size:20pt">Citation</span></b>
+                    <br/>
+                    <span style="font-size:6px;">&nbsp;<br/></span>
+                    <span style="font-size:15pt">
+                          M. Cannici, C. Plizzari, M. Planamente, M. Ciccone, A. Bottino, B. Caputo, M. Matteucci.
+                          <b>N-ROD: a Neuromorphic Dataset for Synthetic-to-Real Domain Adaptation.</b>
+                          In <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops</em>, 2021.</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td width=250px align=left>
+            </td>
+            <td width=50px align=center>
+            </td>
+            <td width=550px align=left>
+                <div class="paper">
+                    <pre xml:space="preserve">
+
+                    </pre>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+    <div style="text-align:center; font-size: 12px;">
+        <a href="https://github.com/ajayjain/lmconv/tree/gh-pages" style="color: #aaa">Original Website Template</a>
+    </div>
+</div>
+</body>
+</html>
